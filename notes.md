@@ -26,3 +26,12 @@ By default _Babel_ "does not ship with any transfomations enabled".  `npm instal
     //...
 }
 ```
+
+## 2
+
+**Laravel Elixir** wrapper around gulp to simplify project's common tasks.
+
+1. `laravel new project`
+2. use laravel Elixir.
+3. `npm install`
+4. 
