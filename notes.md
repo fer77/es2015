@@ -34,4 +34,15 @@ By default _Babel_ "does not ship with any transfomations enabled".  `npm instal
 1. `laravel new project`
 2. use laravel Elixir.
 3. `npm install`
-4. 
+
+## 3
+
+Declare varibles at the top and assign them as needed.
+
+**let** and **const** are both _block_ level declarations.
+
+**const** the assignment or binding is inmutable, but the value is not. _To force immutability use: const months = Object.freeze([...]);_
+
+- Use _var_ at the top level.
+- Default to using _let_.
+- Use _const_ when the value will never change.
