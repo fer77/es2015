@@ -7,7 +7,8 @@
     ]
   },
   "scripts": {
-    "build": "babel src -d output"
+    "build": "babel src -d output",
+    "watch": "babel src -w -d output"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
