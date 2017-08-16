@@ -46,3 +46,38 @@ Declare varibles at the top and assign them as needed.
 - Use _var_ at the top level.
 - Default to using _let_.
 - Use _const_ when the value will never change.
+
+## 4
+
+An _arrow function_ is a shorter syntax of a function expression.  It does not bind its own this, arguments, super, or new.target, and cannot be used as constructors.
+
+Basic arrow function rules:
+---
+
+- for single arguments:
+
+```js
+  (task => console.log(task));
+```
+
+- for multiple arguments:
+
+```js
+  ((task, index) => console.log(task));
+  // The return keyword is implicit when using a single line.
+```
+
+- for no arguments:
+
+```js
+  (() => console.log(task));
+```
+
+- use `{}` when doing more than a single action:
+
+```js
+  (() => {
+    //...
+    // ...
+  });
+```
