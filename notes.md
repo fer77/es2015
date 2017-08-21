@@ -84,3 +84,19 @@ Basic arrow function rules:
 
 ## 5
 
+default parameters
+
+## 6
+
+_rest_ allows for an indefinite number of arguments to be represented as an array.  Translates a sequence of arguments into an array.
+Have the _rest_ operator at the end of a list of arguments so at the "front" you can pass other arguments.
+```javascript
+  function sum(foo, ...numbers) {// encapsulates arguments in an array.
+    return numbers.reduce(function(prev, current) {
+      return prev + current;
+    });
+  }
+  console.log(sum('vlaue', 1, 2, 3, 4, 5));
+```
+
+ _spread_ allows an array to be expanded in places where zero or more arguments/elements are expected.  Splits an array into arguments in a function.
