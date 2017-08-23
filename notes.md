@@ -92,7 +92,7 @@ _rest_ allows for an indefinite number of arguments to be represented as an arra
 Have the _rest_ operator at the end of a list of arguments so at the "front" you can pass other arguments.
 
 ```javascript
-  function sum(foo, ...numbers) {// encapsulates arguments in an array.
+  function sum(foo, ...numbers) { // encapsulates arguments in an array.
     return numbers.reduce(function(prev, current) {
       return prev + current;
     });
@@ -100,8 +100,26 @@ Have the _rest_ operator at the end of a list of arguments so at the "front" you
   console.log(sum('vlaue', 1, 2, 3, 4, 5));
 ```
 
- _spread_ allows an array to be expanded in places where zero or more arguments/elements are expected.  Splits an array into arguments in a function.
+_spread_ allows an array to be expanded in places where zero or more arguments/elements are expected.  Splits an array into arguments in a function.
 
- ## 7
+## 7
 
- _Template literals_ 
+_Template literals_ see `es6-learning/src/main-4.js`
+
+## 8
+
+`object` additions:
+
+ - property shorthand
+ - short methods 
+ - object destructuring: Destructures objects into variables.
+
+```javascript
+  let person = {
+  name: "Linda",
+  age: 38
+};
+
+let { name, age } = person;
+```
+
