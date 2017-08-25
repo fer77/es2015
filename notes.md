@@ -123,3 +123,37 @@ _Template literals_ see `es6-learning/src/main-4.js`
 let { name, age } = person;
 ```
 
+## 9
+
+ES6 adds sintaxic sugar to the `class`.
+
+```javascript
+  changeEmail(newEmail) {
+    this.email = newEmail;
+  } // Still being added to the prototype like in ES5:
+//  User.prototype.changeEmail = function(newEmail) {
+//    this.email = newEmail
+//  };
+```
+
+From Chrome dev tools:
+
+```javascript
+//...
+  changeEmail: ƒ changeEmail(newEmail)
+//...
+```
+
+_spread operator_ for passing arguments to a method:
+
+```javascript
+  static register(username, email) {
+    return new User(username, email);
+  }
+  // can be rewritten like:
+  static register(...args) {
+    return new User(...args);
+  }
+```
+
+_spread operator_ any arguments that are passed in will be represented as an array, that are converted into single arguments or values.
