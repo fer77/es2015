@@ -157,3 +157,23 @@ _spread operator_ for passing arguments to a method:
 ```
 
 _spread operator_ any arguments that are passed in will be represented as an array, that are converted into single arguments or values.
+
+## 10
+
+_modules_ simple files.
+
+Define modules, `export` behavior and then `import` behavior as necessary.
+The value of what you `export` is what you sould `import`.
+
+```javascript
+import { TaskCollection, foo } from './TaskCollection'
+//...
+```
+
+_default_ in situations when only one thig is being exported.  Other things can still be exported from that file:
+
+```javascript
+import TaskCollection, { foo } from './TaskCollection'
+//...
+```
+
