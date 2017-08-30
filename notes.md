@@ -177,3 +177,12 @@ import TaskCollection, { foo } from './TaskCollection'
 //...
 ```
 
+## 11
+
+_Module bundlers_, like Browserify, Webpack, or Rollup compile ES2015 code using modules, down to vanilla ES5 code that all browsers understand.
+
+_roullup_ `npm install --global rollup` then specify the files to compile and the output like: `rollup src/main-6.js > src/main.dist.js`.
+
+The output from compilers still needs to be compile to es5 using plugins like `npm install --save-dev rollup-plugin-buble`.  Create a `rollup.config.js` file and configure the plugin there.
+
+run `rollup src/main-6.js -c > src/main.dist.js --f  iife` to compile.
