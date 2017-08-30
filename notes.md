@@ -185,4 +185,6 @@ _roullup_ `npm install --global rollup` then specify the files to compile and th
 
 The output from compilers still needs to be compile to es5 using plugins like `npm install --save-dev rollup-plugin-buble`.  Create a `rollup.config.js` file and configure the plugin there.
 
-run `rollup src/main-6.js -c > src/main.dist.js --f  iife` to compile.
+run `rollup src/main-6.js -c > src/main.dist.js --f  iife` to compile. 
+
+https://www.npmjs.com/package/rollup-plugin-buble
