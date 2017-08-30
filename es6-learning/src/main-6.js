@@ -1,6 +1,4 @@
-import { TaskCollection, foo } from './TaskCollection';
-
-console.log(foo);
+import TaskCollection from './TaskCollection';
 
 new TaskCollection([
 	'Go to the store',
