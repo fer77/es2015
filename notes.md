@@ -188,3 +188,55 @@ The output from compilers still needs to be compile to es5 using plugins like `n
 run `rollup src/main-6.js -c > src/main.dist.js --f  iife` to compile. 
 
 https://www.npmjs.com/package/rollup-plugin-buble
+
+## 12
+
+`npm init -y` is a quick way to scafold a `package.json` file.
+
+_webpack_ and _elixir_
+
+- `npm install webpack --save-dev`
+
+- create a configuration file `webpack.config.js`
+
+- add a `devtool: 'source-map'` line to help debug.
+
+```javascript
+//...
+
+module.exports = {
+  entry: './src/main.js',
+  devtool: 'source-map',
+  //...
+};
+```
+
+- add scripts as needed in the `package.json` file and execute it as `npm run build`
+
+```javascript
+{
+  //...
+  "scripts": {
+    "build": "webpack"
+  },
+  //...
+}
+```
+
+- at this point there is still no compilation add a plugin like `npm install buble-loader --save-dev`
+
+- register loaders to `webpack.config.js` file and a test.
+
+```javascript
+module.exports = {
+  //...
+  module: {
+    loaders: [
+      { test: /\.js$/, loader: 'buble-loader' }
+    ]
+  }
+};
+```
+
+_loaders_ are similar to using _gulp task_, something that can be plugged in and transform the code in someway.
+_test_ are handled using _regular expressions_
