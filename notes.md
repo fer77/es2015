@@ -240,3 +240,21 @@ module.exports = {
 
 _loaders_ are similar to using _gulp task_, something that can be plugged in and transform the code in someway.
 _test_ are handled using _regular expressions_
+
+## 13
+
+_promise_ is a stand-in or placeholder for an action that has not yet taken place, a promise to perform an action.  Promises keeps our code from depending on too many callbacks.
+
+_.then_ is an indication that the preceeding is a promise.
+
+```javascript
+var promise = this.$http.get('/some/path');// placeholder for an action that has not yet taken completed
+
+promise.then(function(data) {
+  //Once the promise is completed proceed...
+  });
+
+  promise.catch(function(err) {
+    //Or return any errors...
+    });
+```
