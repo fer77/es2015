@@ -111,7 +111,7 @@ _Template literals_ see `es6-learning/src/main-4.js`
 `object` additions:
 
  - property shorthand
- - short methods 
+ - short methods
  - object destructuring: Destructures objects into variables.
 
 ```javascript
@@ -185,7 +185,7 @@ _roullup_ `npm install --global rollup` then specify the files to compile and th
 
 The output from compilers still needs to be compile to es5 using plugins like `npm install --save-dev rollup-plugin-buble`.  Create a `rollup.config.js` file and configure the plugin there.
 
-run `rollup src/main-6.js -c > src/main.dist.js --f  iife` to compile. 
+run `rollup src/main-6.js -c > src/main.dist.js --f  iife` to compile.
 
 https://www.npmjs.com/package/rollup-plugin-buble
 
@@ -258,3 +258,14 @@ promise.then(function(data) {
     //Or return any errors...
     });
 ```
+
+## 14
+
+Additions to the string API:
+
+- startsWith()
+- endsWith()
+- includes()
+- repeat()
+
+A second argument can be passed to these methods to specify an index to start from or focus at.
