@@ -269,3 +269,11 @@ Additions to the string API:
 - repeat()
 
 A second argument can be passed to these methods to specify an index to start from or focus at.
+
+## 15
+
+Additions to arrays.
+
+- find
+- findIndex
+- includes
