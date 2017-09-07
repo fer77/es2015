@@ -277,3 +277,21 @@ Additions to arrays.
 - find
 - findIndex
 - includes
+
+## 16
+
+**Generators** Allow functions or a function to pause at a particular point and later resume and be paused again.
+
+Creating a _generator_:
+
+1. Begin function name with _*_ and contains _yield_ which indicates that the function is pausing or exiting early, similar to a _return_ but cyclable, meaning it can return to the exact same point.
+
+```javascript
+  function *numbers() {
+    yield 1;
+    yield 2;
+    yield 3;
+  }
+```
+
+2.
