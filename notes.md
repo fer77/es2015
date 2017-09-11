@@ -295,3 +295,16 @@ Creating a _generator_:
 ```
 
 2.
+
+## 17
+
+**set** an object that contains a collections of unique values of any type. Duplicates will be ignored.
+API contains:
+- `.size()`
+- `.add()`
+- `.delete()`
+- `.has()`
+- `.forEach()`
+- `.clear()`
+```javascript
+```
